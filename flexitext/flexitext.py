@@ -32,6 +32,7 @@ class FlexiText:
         mva="baseline",
         xycoords="axes fraction",
         ax=None,
+        wrap=False
     ):
         """Draw text with multiple formats.
 
@@ -112,6 +113,7 @@ def flexitext(
     mva="baseline",
     xycoords="axes fraction",
     ax=None,
+    wrap=False
 ):
     """Draw text with multiple formats.
 
@@ -144,4 +146,4 @@ def flexitext(
     -------
     annotation_box: matplotlib.offsetbox.AnnotationBbox
     """
-    return FlexiText(*make_texts(s)).plot(x, y, ha, va, ma, mva, xycoords, ax)
+    return FlexiText(*make_texts(s)).plot(x, y, ha, va, ma, mva, xycoords, ax, wrap)
