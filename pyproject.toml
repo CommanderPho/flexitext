@@ -20,6 +20,8 @@ mkdocs-redirects = "^1.2.1"
 mkdocs-section-index = "^0.3.9"
 pytkdocs = {extras = ["numpy-style"], version = "^0.16.1"}
 mkdocstrings-python = "^1.10.3"
+ipykernel = "^6.29.4"
+mknotebooks = "^0.8.0"
 
 
 [tool.poetry.group.dev.dependencies]
